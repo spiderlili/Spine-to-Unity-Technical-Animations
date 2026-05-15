@@ -11,8 +11,17 @@
 9. Pack Settings > Options > atlas extension: `.atlas.txt` -> Ensure your atlas file is exported and saved as `.atlas.txt`, not just `.atlas.` which is the default. Unity requires the `.txt` extension to read the file properly!
 10. Texture atlas: :white_check_mark: pack, Pack Settings > :white_check_mark: Premultiply alpha (Note: blending math for Premultiplied Alpha is strictly designed for Gamma Color space. Using it in Linear space causes rendering errors!)
 11. Pack Settings > Pages > :white_check_mark: Power of two
-12. Set Output Folder (usually Textures > SpineAtlas > CharacterName) > Export: there should be 3 files - [CharacterName].atlas, [CharacterName].png, [CharacterName].skel.bytes 
+12. Set Output Folder (usually Textures > SpineAtlas > CharacterName) > Export: there should be 6 files - [CharacterName].atlas.txt, [CharacterName].asset, [CharacterName].png, [CharacterName].skel.bytes, [CharacterName].mat, [CharacterName].asset
+13. Untick sRGB (Color Texture) in [texture import settings](https://esotericsoftware.com/spine-unity-assets) for Gamma Colour Space, apply compression settings (ASTC 8x8 block)
+14. Set material to use `Spine/Skeleton` shader
+15. Preview animation on the Skeleton Data file
+16. [OPTIONAL] Skeleton Data > Mix Settings > Add Custom Mix: set up blending between animations
 
 # Unity Scene Setup with Spine Animations
 - Camera Projection: Orthographic
-- Canvas: 
+- Canvas > Create a new empty GameObject as the parent
+- Create > Spine > SkeletonGraphic (UnityUI) OR SkeletonAnimation (for 2D animations in game scene)
+- [OPTIONAL] enable Loop on SkeletonAnimation component
+
+# Resources
+- https://esotericsoftware.com/spine-unity-assets
