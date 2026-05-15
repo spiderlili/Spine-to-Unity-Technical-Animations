@@ -7,9 +7,11 @@
 5. Change Color Space to Gamma in Project Settings for better colour match in Spine 2D
 6. Spine: Export (Cmd + E) > Data: Binary as exporting in binary format instead of JSON will result in smaller file size and faster loading
 7. Set the Extension to `.skel.bytes`
-8. Texture atlas: :white_check_mark: pack, Pack Settings > :white_check_mark: Premultiply alpha (Note: blending math for Premultiplied Alpha is strictly designed for Gamma Color space. Using it in Linear space causes rendering errors!)
-9. Pack Settings > Pages > :white_check_mark: Power of two
-10. Set Output Folder (usually Textures > SpineAtlas > CharacterName) > Export: there should be 3 files - [CharacterName].atlas, [CharacterName].png, [CharacterName].skel.bytes 
+8. Uncheck Export > Pack Settings > Flatten Paths
+9. Pack Settings > Options > atlas extension: `.atlas.txt` -> Ensure your atlas file is exported and saved as `.atlas.txt`, not just `.atlas.` which is the default. Unity requires the `.txt` extension to read the file properly!
+10. Texture atlas: :white_check_mark: pack, Pack Settings > :white_check_mark: Premultiply alpha (Note: blending math for Premultiplied Alpha is strictly designed for Gamma Color space. Using it in Linear space causes rendering errors!)
+11. Pack Settings > Pages > :white_check_mark: Power of two
+12. Set Output Folder (usually Textures > SpineAtlas > CharacterName) > Export: there should be 3 files - [CharacterName].atlas, [CharacterName].png, [CharacterName].skel.bytes 
 
 # Unity Scene Setup with Spine Animations
 - Camera Projection: Orthographic
