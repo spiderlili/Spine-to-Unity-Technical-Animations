@@ -1,0 +1,11 @@
+powerup-pro.png
+size:512,256
+filter:Linear,Linear
+pma:true
+star
+bounds:2,67,76,72
+token
+bounds:80,17,123,122
+wing
+bounds:205,2,137,150
+rotate:90
