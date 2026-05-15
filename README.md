@@ -1,5 +1,5 @@
 # Spine to Unity (2D URP)
-> IMPORTANT: Make sure the [Spine version](https://esotericsoftware.com/spine-unity-download) is compatible with the Unity project version! 
+> IMPORTANT: Make sure the [Spine version](https://esotericsoftware.com/spine-unity-download) is compatible with the Unity project version! This project uses Unity 6000.3.12f1 and Spine 4.3 beta (Custom Package)
 1. Create a Unity project with 2D URP template
 2. Install the latest [Spine-Unity Runtime](https://esotericsoftware.com/spine-unity) via [Unity Package Manager](https://esotericsoftware.com/spine-unity-installation): as of May 2026, the git link for spine 4.3 beta does not work -> you have to download the package & install via Assets > Import Package > Custom Package
 3. Install the latest [URP Shaders UPM](https://esotericsoftware.com/spine-unity-download) via Unity Package Manager: Packages > Spine Universal RP Shaders; materials are in spine-unity Runtime > Materials
