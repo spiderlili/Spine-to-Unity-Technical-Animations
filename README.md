@@ -23,5 +23,10 @@
 - Create > Spine > SkeletonGraphic (UnityUI) OR SkeletonAnimation (for 2D animations in game scene)
 - [OPTIONAL] enable Loop on SkeletonAnimation component
 
+# Common Errors Explained
+<img width="490" height="466" alt="Screenshot 2026-05-19 at 11 53 20" src="https://github.com/user-attachments/assets/f1fee1d9-5deb-48f7-9da7-eee320d769cb" />
+<img width="392" height="262" alt="Screenshot 2026-05-19 at 11 59 07" src="https://github.com/user-attachments/assets/74888153-7e17-4c4b-9ea3-076ccbeea8ab" />
+
+
 # Resources
 - https://esotericsoftware.com/spine-unity-assets
