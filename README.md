@@ -30,3 +30,4 @@
 
 # Resources
 - https://esotericsoftware.com/spine-unity-assets
+- https://esotericsoftware.com/spine-unity-main-components
