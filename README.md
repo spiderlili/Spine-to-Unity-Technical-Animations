@@ -35,6 +35,7 @@
 - Skin: A group of preset image attachments. Each skin defines which image goes with which placeholder slot -> you can change every image attached to every slot at once by activating a different skin.
 - Atlas: refers both to atlas images and to the text data describing those images. An atlas image is an assemblage of many small images packed into a single large image. Fall the different parts of the character are packed into 1 large image.
 
-# Resources
+# Resources & Reading List
 - https://esotericsoftware.com/spine-unity-assets
 - https://esotericsoftware.com/spine-unity-main-components
+- Unity Character Customization: Modular 3D and Spine2D
