@@ -27,6 +27,13 @@
 <img width="490" height="466" alt="Screenshot 2026-05-19 at 11 53 20" src="https://github.com/user-attachments/assets/f1fee1d9-5deb-48f7-9da7-eee320d769cb" />
 <img width="392" height="262" alt="Screenshot 2026-05-19 at 11 59 07" src="https://github.com/user-attachments/assets/74888153-7e17-4c4b-9ea3-076ccbeea8ab" />
 
+# Spine Glossary
+- Skeleton: The root-level container for everything in an animation. The name derives from the fact that this container holds a collection of bones. In Spine, a “skeleton” includes everything needed for an animation, not just bones. As in 3D, this is sometimes referred to as the “animation rig”.
+- Bone: A rigid, invisible object that moves during an animation. Bones work similarly to the bones of a 3D character. They connect in a hierarchical arrangement and can even influence surfaces covering them. Instead of 3D meshes, the bones in Spine have “slots” connected to them.
+- Slot: An abstract object that serves as an attachment point on a bone. Although a bone can have multiple slots, each slot can hold only 1 attachment at a time. Slots can be colored & anything attached to a slot inherits that tint.
+- Attachment: Anything that attaches to a slot. The most common type of attachment is an image, but an attachment can also be more abstract, such as a collision shape or a placeholder for skins. For a placeholder, the image displayed depends on the skin that has been activated.
+- Skin: A group of preset image attachments. Each skin defines which image goes with which placeholder slot -> you can change every image attached to every slot at once by activating a different skin.
+- Atlas: refers both to atlas images and to the text data describing those images. An atlas image is an assemblage of many small images packed into a single large image. Fall the different parts of the character are packed into 1 large image.
 
 # Resources
 - https://esotericsoftware.com/spine-unity-assets
