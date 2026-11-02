@@ -10,7 +10,7 @@
 8. Set the Extension to `.skel.bytes`
 9. Uncheck Export > Pack Settings > Flatten Paths
 10. Pack Settings > Options > atlas extension: `.atlas.txt` -> Ensure your atlas file is exported and saved as `.atlas.txt`, not just `.atlas.` which is the default. Unity requires the `.txt` extension to read the file properly!
-11. Texture atlas: :white_check_mark: pack, Pack Settings > :white_check_mark: Premultiply alpha (Note: blending math for Premultiplied Alpha is strictly designed for Gamma Color space. Using it in Linear space causes rendering errors!)
+11. Texture atlas: :white_check_mark: pack, Pack Settings > :white_check_mark: Premultiply alpha (Note: blending math for Premultiplied Alpha is strictly designed for Gamma Color space. Using it in Linear space causes rendering errors!) It is important to select all spine atlas textures (e.g. via filter "t:texture") and disabled the Advanced - Alpha is Transparency parameter in Unity to avoid alpha artifacts if using Premultiplied Alpha.
 12. Pack Settings > Pages > :white_check_mark: Power of two
 13. Set Output Folder (usually Textures > SpineAtlas > CharacterName) > Export: there should be 6 files - [CharacterName].atlas.txt, [CharacterName].asset, [CharacterName].png, [CharacterName].skel.bytes, [CharacterName].mat, [CharacterName].asset
 14. Untick sRGB (Color Texture) in [texture import settings](https://esotericsoftware.com/spine-unity-assets) for Gamma Colour Space, apply compression settings (ASTC 8x8 block)
